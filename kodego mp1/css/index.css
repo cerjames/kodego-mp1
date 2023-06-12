@@ -1,0 +1,214 @@
+.feat-prods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  background-color: #d8c0a9 !important;
+}
+
+.features {
+  border: none !important;
+}
+
+.bg-coffee-bean {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-coffee-bean::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgb(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 1)
+    ),
+    url("../img/index/mike-kenneally-TD4DBagg2wE-unsplash.jpg") no-repeat center
+      center/cover;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.bg-ft-darkbrown {
+  background: rgba(129, 62, 0, 0.521) !important;
+}
+
+.card-color {
+  background: rgb(216, 192, 169, 0.95) !important;
+  border-color: rgb(151, 120, 90, 0.75) !important;
+  color: rgb(156, 98, 44);
+}
+
+.card-body {
+  height: 24rem;
+  border: none !important;
+  border-radius: 0.4rem !important;
+  background-color: rgba(83, 55, 45, 0.6) !important;
+  transition: height 0.3s ease-in-out !important;
+}
+
+.feature-items {
+  z-index: 10;
+}
+
+#testimonials .card-body {
+  height: auto;
+}
+
+#testimonials .img-holder {
+  width: 200px;
+  height: 200px;
+}
+
+#testimonials .no-bg {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* Gallery */
+#gallery img {
+  width: 337.2px;
+  height: 250px;
+}
+
+@media (min-width: 240px) {
+  .card-body {
+    height: 26rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 568px) {
+  .card-body {
+    height: 24rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-body {
+    height: 26rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-body {
+    height: 28rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-body {
+    height: 25rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-body {
+    height: 24rem;
+    transition: height 0.3s ease-in-out !important;
+  }
+}
+
+.features-icon {
+  background: #f7f7f7;
+  border: #f3f3f3 solid 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-item img {
+  background-color: #523a28 !important;
+  opacity: 0.75 !important;
+  filter: blur(2.5px);
+}
+
+.carousel-item,
+.carousel-inner,
+#slider1 {
+  height: 100%;
+}
+
+.fa-shopping-cart:hover {
+  animation: shake 0.75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(2px, 0);
+  }
+  20% {
+    transform: translate(5px, 0);
+  }
+  30% {
+    transform: translate(10px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(22px, 0);
+  }
+  60% {
+    transform: translate(20px, 0);
+  }
+  70% {
+    transform: translate(22px, 0);
+  }
+  80% {
+    transform: translate(10, 0);
+  }
+  90% {
+    transform: translate(5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
